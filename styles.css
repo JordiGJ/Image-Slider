@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  background-color: rgb(235, 223, 176);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section {
+  width: 500px;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.images {
+  position: absolute;
+  height: 300px;
+  width: inherit;
+  left: 0;
+  display: flex;
+  transition: left 0.3s ease-in;
+}
+i {
+  font-size: 1.2rem;
+  position: absolute;
+  opacity: 0.6;
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.15s linear;
+}
+i:hover {
+  opacity: 1;
+}
+.fa-angle-double-left {
+  left: 10px;
+  top: 150px;
+  top: 140.5px;
+}
+.fa-angle-double-right {
+  right: 10px;
+  top: 140.5px;
+}
